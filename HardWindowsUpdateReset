@@ -1,0 +1,21 @@
+start cmd /c
+net stop wuauserv
+ping 1.1.1.1 -n 2 -w 1000
+net stop cryptSvc
+ping 1.1.1.1 -n 2 -w 1000
+net stop bits
+ping 1.1.1.1 -n 2 -w 1000
+net stop msiserver
+ping 1.1.1.1 -n 2 -w 1000
+ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+ping 1.1.1.1 -n 2 -w 1000
+ren C:\Windows\System32\catroot2 catroot2.old
+ping 1.1.1.1 -n 2 -w 1000
+net start cryptSvc
+ping 1.1.1.1 -n 2 -w 1000
+net start bits
+ping 1.1.1.1 -n 2 -w 1000
+net start msiserver
+ping 1.1.1.1 -n 2 -w 1000
+net start wuauserv
+exit
