@@ -1,6 +1,7 @@
-﻿#OneStart removal script
+#This aims to completely remove all files, reg keys and scheduled tasks that OneStart creates while not a malicous program. Its considered adware & a Potentially Unwanted Program (PUP) 
+#OneStart removal script
 
-# find running processes with "OneStart/DBar" in them
+#find running processes with "OneStart/DBar" in them
 
 $valid_path = "C:\Users\*\AppData\Roaming\OneStart\*"
 
