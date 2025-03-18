@@ -13,3 +13,4 @@ Get-ChildItem -Path C:\Users\* -Recurse -Include * |
     }
   } | Out-File -FilePath C:\Windows\Temp\top_30_items.txt
 
+Read-Host -Prompt "File Saved to C:\Windows\Temp\top_30_items.txt Press any key to exit"
